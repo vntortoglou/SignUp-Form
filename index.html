@@ -3,10 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SignU[-Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
+
+    <div class="structure">
+
+
+
+   
+        
+    <!-- This is the left side of the Main -->
+
+        <div class="leftSide">
+
+            <div class="lineLabel">
+            <div class="hkLabel">
+            <img src="./img/label.png" alt="HollowKnightLabel" id="hklabel">
+            </div>
+            </div>
+
+            <div class="hollowKnight">
+            <img src="./img/hk.png" alt="HollowKnight" id="hollowKnight">
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- This is the right side of the main-->
+
+<div class="rightSide">
+
+<div class="headText">
+    <h1>Sign-Up if you agree that this is <br/> the best Metroidvania game ever!!!</h1>
+    <img src="./img/shadowhk.png" alt="shadowhk" id="shadowhk">
+</div>
+
+
+<form action="" method="post">
+
+
+<div class="FirstLastName">
+
+<div class="FirstName">
+<label for="userName">First Name</label>
+<input type="text" name="userName" minlength="3" maxlength="30" required>
+</div>
+
+
+<div class="LastName">
+<label for="userLastName">Last Name</label>
+<input type="text" name="userLastName" minlength="3" maxlength="30" required>
+</div>
+
+</div>
+
+
+
+<div class="PassAndConfirm">
+
+<div class="ThePassword">
+<label for="userPassword">Password</label>
+<input type="password" id="password" name="userPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+<span class="validation" width="20em" color="red" required></span>
+
+</div>
+
+<div class="ConfirmPassword">
+<label for="confirmPassword">Confirm Password</label>
+<input type="password" id="cPassword" name="confirmPassword" min="8" max="15" pattern=".{8,}" required>
+</div>
+</div>
+
+</form>
+
+<hr>
+
+<button class="CAbtn">Create Acount</button>
+<div class="already">Already have an acount?
+    <button class="logIn">log in</button>
+</div>
+<img src="./img/Void_Heart.png" alt="Void_Heart" id="voidHeart" class="voidHeart">
+
+</div>
+    </div>
     
     <script src="javascript.js"></script>
 </body>
